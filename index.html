@@ -3,30 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Coffee House - Góc Cà Phê Tuyệt Vời</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Cafe Gốc Phố - Hương Vị Nguyên Bản</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="logo">☕ Cafe Gốc Phố</div>
-        <nav class="navbar">
-            <a href="#">Trang Chủ</a>
-            <a href="#">Menu</a>
-            <a href="#">Không Gian</a>
-            <a href="#">Liên Hệ</a>
-        </nav>
+    <header class="site-header">
+        <div class="container header-wrapper">
+            <h1 class="logo">☕ Cafe Gốc Phố</h1>
+            <nav class="navbar">
+                <a href="#home">Trang Chủ</a>
+                <a href="#about">Giới Thiệu</a>
+                <a href="#menu">Thực Đơn</a>
+                <a href="#contact">Liên Hệ</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Khởi Đầu Ngày Mới Với Tách Cà Phê Đậm Vị</h1>
-            <p>Hương vị nguyên bản từ những hạt cà phê rang xay nguyên chất, mang lại không gian yên tĩnh và khơi nguồn cảm hứng sáng tạo cho bạn.</p>
-            <a href="#" class="btn">Khám Phá Ngay</a>
-        </div>
-    </section>
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <span class="hero-label">Đậm vị - Rang xay nguyên chất</span>
+                <h2>Khởi Đầu Ngày Mới Với Tách Cà Phê Đậm Đà</h2>
+                <p>Một không gian yên bình giữa lòng thành phố, nơi bạn tìm lại những nốt hương mộc mạc và khơi nguồn cảm hứng sáng tạo mỗi ngày.</p>
+                <a href="#menu" class="btn-primary">Khám Phá Menu</a>
+            </div>
+        </section>
 
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">Câu Chuyện Gốc Phố</h2>
+                <p class="section-text">
+                    [Khu vực của Bạn B]: Hãy viết một đoạn ngắn giới thiệu về nguồn gốc hạt cafe, phong cách thiết kế không gian quán hoặc thông điệp mà quán muốn truyền tải đến khách hàng vào đây nhé.
+                </p>
+                </div>
+        </section>
 
-    </body>
+        <section id="menu" class="section services-section">
+            <div class="container">
+                <h2 class="section-title">Menu Thức Uống Nổi Bật</h2>
+                <div class="card-list">
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Đặt Bàn & Góp Ý</h2>
+                </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Copyright 2026 - Cafe Gốc Phố - Nhóm 5 Web Project</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>

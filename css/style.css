@@ -1,0 +1,217 @@
+/* Reset default browser style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3e2723; /* Màu nâu đậm đà */
+    background-color: #fdfbf7; /* Nền kem ấm áp */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(62, 39, 35, 0.95); /* Màu nền header nâu gỗ */
+    backdrop-filter: blur(12px);
+    color: #ffffff;
+    padding: 18px 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.navbar a {
+    color: #d7ccc8;
+    margin-left: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffcc80; /* Màu cam sữa khi hover */
+}
+
+/* Hero Banner */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    /* Hiệu ứng tối màn hình để nổi bật chữ */
+    background: linear-gradient(135deg, rgba(62, 39, 35, 0.9), rgba(141, 110, 99, 0.7)),
+                url("../assets/images/hero-bg.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.hero-content {
+    text-align: center;
+    width: 100%;
+}
+
+.hero-label {
+    display: inline-block;
+    padding: 8px 18px;
+    margin-bottom: 20px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-size: 44px;
+    margin-bottom: 18px;
+    color: #fff8e1;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    font-size: 18px;
+    color: #efebe9;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 999px;
+    background-color: #ffb74d; /* Nút màu cam ấm */
+    color: #3e2723;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background-color: #ffa726;
+}
+
+/* Common section */
+.section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #4e342e;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-text {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 17px;
+    color: #5d4037;
+}
+
+/* Gợi ý khung Grid 3 cột cho Bạn B làm các Card đồ uống */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 36px;
+}
+
+.activity-card {
+    padding: 24px;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid #bcaaa4;
+    box-shadow: 0 8px 20px rgba(62, 39, 35, 0.05);
+    transition: 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px rgba(62, 39, 35, 0.12);
+}
+
+/* Khung CSS chuẩn bị sẵn cho Bạn C làm Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 36px auto 0;
+    padding: 30px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    border: 1px solid #d7ccc8;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #4e342e;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #bcaaa4;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    background-color: #fafafa;
+}
+
+/* Footer */
+.site-footer {
+    padding: 28px;
+    text-align: center;
+    background-color: #2d1a17;
+    color: #d7ccc8;
+    font-size: 14px;
+}
+
+/* Responsive di động */
+@media (max-width: 768px) {
+    .header-wrapper {
+        flex-direction: column;
+        gap: 14px;
+    }
+    .navbar a {
+        margin: 0 10px;
+    }
+    .hero h2 {
+        font-size: 32px;
+    }
+    .card-list {
+        grid-template-columns: 1fr;
+    }
+}
