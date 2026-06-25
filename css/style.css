@@ -215,3 +215,9 @@ body {
         grid-template-columns: 1fr;
     }
 }
+.hero-section {
+    /* Đổi đường dẫn này về đúng file ảnh quán cafe sếp đã lưu trong máy */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
